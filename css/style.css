@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    --main-bg-color: #0a0626;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+  /* height: 58px; */
+  background-color:var(--main-bg-color);
+  font-family: "Lato", sans-serif;
+}
+ 
+ nav{
+    display: flex;
+ } 
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+    
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(119, 62, 111);
+    font-weight: bold;
+}
+
+
+
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+  align-items: center;
+}
+.search input{
+    width: 491px;
+  height: 27px;
+  border-radius: 7px;
+  margin:  0 16px 0 33px;
+  padding: 0 12px;
+  /* if i do not want print like this then i choose ::placeholder(this is for padding)
+*/
+}
+.search button{
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+ 
+}
+/* .search input::placeholder {
+ display: flex;
+  text-align: center; 
+  optional of padding; 0 12px;
+} */
+
+.slider{
+  /* margin: auto; */
+  width: 80vw; /* Full width of the viewport */
+  display: flex;
+  height: 440px;
+  margin: 12px auto;
+  overflow: hidden;
+}
+.slider img{
+  width: 100%;
+}
+
+
+.btn:hover{
+  /* background-color: aqua; */
+  font-weight: bold;
+}
+.card-item img{
+  width: 201px;
+}
+
+.card{
+  
+    max-width: 91vw;
+    margin: 37px auto;
+}
+
+.card h2{
+  font-family: "Lato", sans-serif;
+}
+.card-item{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 14px;
+}
+
+.cards{
+  display: flex;
+  overflow: hidden;
+}
+
+.lines p{
+  font-family: "Lato", sans-serif;
+}
+
+.container{
+  min-height: calc(100vh - 58px - 12vh);
+}
+
+
+
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color );
+    color: white;
+    font-family: "Lato", sans-serif;
+}
